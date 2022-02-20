@@ -11,15 +11,18 @@
 sensor:
   - platform: rest
     name: {choose a name}
-    resource: https://sheets.googleapis.com/v4/spreadsheets/{your-gsheets-file-url-link}/values/{sheet-name}?key={api-key}
+    resource: https://sheets.googleapis.com/v4/spreadsheets/{your-gsheets-file-url-link}/values/{sheet-name-and-range}?key={api-key}
     value_template: "Ok" #so that you don't get the "max length is 255 characters" error
     json_attributes:
       - values
     scan_interval: 60 #polling interval
 ```
+<br>
 
 Now that we have already data coming in, let's display it.
 Keep in mind that your new "sensor" is receiving the full json as an attribute.
 Example:
 
-![example_json_received](/Images/json_example.png "Json example")
+<br>
+
+![example_json_received](https://github.com/mtippt/Images/blob/main/json_example.png?raw=true "Json example")
