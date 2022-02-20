@@ -5,7 +5,7 @@
 
 <br>
 
-### Add this to your configuration.yaml
+## Add this to your configuration.yaml
 
 ```yaml
 sensor:
@@ -15,5 +15,11 @@ sensor:
     value_template: "Ok" #so that you don't get the "max length is 255 characters" error
     json_attributes:
       - values
-    scan_interval: 60
+    scan_interval: 60 #polling interval
 ```
+
+Now that we have already data coming in, let's display it.
+Keep in mind that your new "sensor" is receiving the full json as an attribute.
+Example:
+
+![example_json_received](/Images/json_example.png "Json example")
