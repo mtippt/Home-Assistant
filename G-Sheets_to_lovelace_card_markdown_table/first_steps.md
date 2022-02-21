@@ -21,20 +21,20 @@ sensor:
 
 Now that we have already data coming in, let's display it.
 Keep in mind that your new "sensor" is receiving the full json as an attribute.
-Example:
+Eg.
 
 <br>
 
 <p align="center">
-  <img src="https://github.com/mtippt/Images/blob/main/json_example.png?raw=true" alt="example_json_received" style="height: 200px; width:300px;"/>
+  <img src="https://github.com/mtippt/Images/blob/main/json_example.png?raw=true" alt="example_json_received" style="height: 350px; width:275px;"/>
 </p>
 
 <br>
 
 Finally you have your variable and you can manipulate it as you normally do.
 
-Example:
+Eg.
 
-```
-{{  state_attr('sensor.{your_name}', 'values')[x][y] }}
-```
+<p align="center">
+  <img src="https://github.com/mtippt/Images/blob/main/json_card_example.png?raw=true" alt="example_json_received" style="height: 250px; width:400px;"/>
+</p>
