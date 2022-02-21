@@ -25,4 +25,16 @@ Example:
 
 <br>
 
-![example_json_received](https://github.com/mtippt/Images/blob/main/json_example.png?raw=true "Json example")
+<p align="center">
+  <img src="https://github.com/mtippt/Images/blob/main/json_example.png?raw=true" alt="example_json_received" style="height: 200px; width:300px;"/>
+</p>
+
+<br>
+
+Finally you have your variable and you can manipulate it as you normally do.
+
+Example:
+
+```
+{{  state_attr('sensor.{your_name}', 'values')[x][y] }}
+```
